@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+.box{
+    height: 400px;
+    width: 400px;
+    border: 10px dashed tomato;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: box 1s infinite forwards;
+
+}
+@keyframes box{
+    0%{border-color: red; transform: rotate(360deg);}
+    25%{border-color: green;  transform: rotate(280deg);}
+    50%{border-color: blue;  transform: rotate(180deg);}
+    75%{border-color: yellow; transform: rotate(80deg);}
+    100%{border-color: rgb(255, 35, 200);  transform: rotate(0deg);}
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 40%;
+    animation: circle 4s infinite forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes circle{
+    0%{border-color: red; transform: scale(1);}
+    25%{border-color: green;  transform: scale(1.1);}
+    50%{border-color: blue;  transform: scale(1.2);}
+    75%{border-color: yellow; transform: scale(1.1);}
+    100%{border-color: rgb(255, 35, 200);  transform: scale(1);}
+}
+.st{
+    width: 100px;
+    height: 100px;
+    border: 3px dotted greenyellow;
+    border-radius: 50%;
+    animation: st 2s infinite forwards;
+}
+@keyframes st{
+    0%{border-color: red; transform: rotate(-360deg);}
+    25%{border-color: green;  transform: rotate(-280deg);}
+    50%{border-color: blue;  transform: rotate(-180deg);}
+    75%{border-color: yellow; transform: rotate(-80deg);}
+    100%{border-color: rgb(255, 35, 200);  transform: rotate(0deg);}
+}
